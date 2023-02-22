@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Adjust the layout for mobile devices-->
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <!--Bootstrap links-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- link to .css document-->
+        <link href="styles.css" rel="stylesheet">
+        <title>Home</title>
+        <!--link to the script -->
+        <script src="hobbies.js"></script>
+    </head>
+    <body>
+      <!-- create a header for name page and navigation bar -->
+      <header class="main-header">
+        <h1 class="header-text">Mario's Page!</h1>
+        <!-- create a simple navigation bar-->
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="favorites.html">FAVORITES</a></li>
+            <li><a href="hobbies.html">HOBBIES</a></li>
+            <li><a href="contact.html">CONTACT DETAILS</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class = background>
+      <section class="section">
+        <h2 class="greet center"> My hobbies </h2>
+        <!-- divide the page into 2 columns and add some pictures and text for my hobbies -->
+        <div class="row">
+          <div class="column1">
+            <ul>
+              <li> <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p.jpg" alt="coffee"> Coffee Making </li>
+              <li> <img src="images/football.jpg" alt="football"> Football </li>
+              <li> <img src="images/gaming.jpg" alt="gaming"> Computer Games </li>
+            </ul>
+          </div>
+          <div class="column2">
+            <ul>
+              <li> Reading Books <img src="images/books.jpg" alt="books"> </li>
+              <li> Coding <img src="images/coding.jpg" alt="coding"> </li>
+              <li> Board Games <img src="images/board.jpg" alt="board"> </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+      <!-- Ask the user to guess my hobby -->
+        <dev class="center">
+          <h3 class="colors-header"> Try to guess which of the above I do every day!</h3>
+        </dev>
+      <!-- use selection form to get the answer -->
+        <form class="center form">
+            <label for="hobby"> </label>
+            <select id="hobby">
+              <option value="Coffee">Coffee Making</option>
+              <option value="Football">Football</option>
+              <option value="Computer Games">Computer Games</option>
+              <option value="Reading Books">Reading Books</option>
+              <option value="Coding">Coding</option>
+              <option value="Board Games">Board Games</option>
+            </select>
+            <button id="submit" type="button">Sumbit</button>
+        </form>
+        <div class="center">
+          <p class="reply"></p>
+        </div>
+      </section>
+      </div>
+      <!--Create the footer to make the site prettier-->
+      <footer class="footer">
+        <p> Website project created for Problem Set 8.</p>
+        <p> CopyRight &#169; Dwukropek. </p>
+      </footer>
+    </body>
+</html>
