@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Adjust the layout for mobile devices-->
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <!--Bootstrap links-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- link to .css document-->
+        <link href="styles.css" rel="stylesheet">
+        <title>Home</title>
+        <!--link to the script -->
+        <script src="contact.js"></script>
+    </head>
+    <body>
+      <!-- create a header for name page and navigation bar -->
+      <header class="main-header">
+        <h1 class="header-text">Mario's Page!</h1>
+        <!-- create a simple navigation bar-->
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="favorites.html">FAVORITES</a></li>
+            <li><a href="hobbies.html">HOBBIES</a></li>
+            <li><a href="contact.html">CONTACT DETAILS</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class = background>
+      <section class="section borderline">
+      <!-- Add some fake details -->
+        <h2 class="greet"> Contact Details </h2>
+        <div class="address">
+          <div class="box">
+            <p class="title">E-MAIL ADDRESS:</p>
+            <p class="text">Dwukropek@CS50duck.com</p>
+          </div>
+          <div class="box">
+            <p class="title">PHONE NUMBER:</p>
+            <p class="text">999-999-999</p>
+          </div>
+          <div class="box">
+            <p class="title">LOCATION:</p>
+            <p class="text">50 Stolen Duck, 711711 Fiftyville</p>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+      <!-- Add the contact form -->
+        <h2 class="greet"> Contact Form </h2>
+        <form method="GET">
+          <div class="column">
+            <label for="name">Name</label>
+            <input name="name" type="text" id="name" required>
+          </div>
+          <div class="column">
+            <label for="email">Email</label>
+            <input name="email" type="email" id="email" required>
+          </div>
+          <div class="column">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" maxlength="300" placeholder="Type your message here" required></textarea>
+          </div>
+          <div class="formbutton">
+            <input class="ok" type="submit" value="Submit">
+          </div>
+        </form>
+      </section>
+      </div>
+      <!--Create the footer to make the site prettier-->
+      <footer class="footer">
+        <p> Website project created for Problem Set 8.</p>
+        <p> CopyRight &#169; Dwukropek. </p>
+      </footer>
+    </body>
+</html>
